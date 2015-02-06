@@ -1,0 +1,28 @@
+JS
+  -- Options parameters
+    opt : url (htp://example.com/webservice.php)
+    opt : method (GET / POST<-default)
+    opt : callbacks
+            upd
+            add
+            rem
+            del
+
+  -- Functions
+    * Private
+    fn : __add
+    fn : __upd
+    fn : __rem
+    fn : __del
+
+    * Public   (name to call)
+    fn : _add  $.add();
+    fn : _upd  $.update();
+    fn : _rem  $.remove();
+    fn : _del  $.delete();
+
+  -- Binds
+    bd : change
+    bd : add
+    bd : rem
+
